@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Clean Bing Search</title>
+    <meta name="description" content="Search bing." />
+    <meta name="keywords" content="Search bing." />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#434c5e"
+    />
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div title="title" class="logo-wrapper">
+      <h1 title="pruxey">Browser</h1>
+    </div>
+    <form>
+      <input id="searchbar" placeholder="Search Bing" />
+      <button type="submit" onclick="redirect()">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3917/3917754.png"
+          alt="buttonpng"
+          border="0"
+          width="20"
+          height="20"
+        />
+      </button>
+      <script>
+        function recirect() {
+          window.location.href =
+            "https://www.bing.com/search?q=" +
+            document.getElementById("searchbar").value;
+        }
+      </script>
+    </form>
+  </body>
+</html>
